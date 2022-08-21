@@ -94,7 +94,7 @@ model_scores_by_zip.food_access_score < 2.0);
 
 ### Q5: What is the average social isolation score for the members? (Using `std_member_info` and `model_scores_by_zip` tables)
 
-The average social isolation score for the members is `3.0686842239472822`
+The average social isolation score for the members is **3.0686842239472822**
 
 ~~~~sql
 SELECT avg(social_isolation_score) FROM 
