@@ -13,21 +13,21 @@ The `interview.db` is a sqlite database that includes the following tables:
 - `roster_5`
 - `model_scores_by_zip`
 
-The five rosters have the following columns: Person_Id, First_Name, Last_Name, Dob, Age, Gender, Street_Address, State, City, Zip, Street_Address, State, City, Zip, eligibility_start_date, eligibility_end_date, payer
+The five rosters have the following columns: *Person_Id, First_Name, Last_Name, Dob, Age, Gender, Street_Address, State, City, Zip, Street_Address, State, City, Zip, eligibility_start_date, eligibility_end_date, payer*
 
-The `model_scores_by_zip` has the following columns: zcta, state_code, state_name, nightborhood_stress_score, algorex_sdoh_composite_score, social_isolation_score, transportation_access_score, food_access_score, unstable_housing_score, state_govt_assitance, homeless_indicator, derived_indicator
+The `model_scores_by_zip` has the following columns: *zcta, state_code, state_name, nightborhood_stress_score, algorex_sdoh_composite_score, social_isolation_score, transportation_access_score, food_access_score, unstable_housing_score, state_govt_assitance, homeless_indicator, derived_indicator*
 
 ## Creating std_member_info table
 For this challenge, I needed to create a table that included data from the 5 rosters only inluding members that are eligible during April 2022. It is also important to note that this table includes one row per member. Here are the folloing columns I will be including in the `std_member_info` table:
-- member_id
-- member_first_name 
-- member_last_name 
-- date_of_birth
-- main_address 
-- city
-- state
-- zip_code
-- payer
+- *member_id*
+- *member_first_name*
+- *member_last_name* 
+- *date_of_birth*
+- *main_address* 
+- *city*
+- *state*
+- *zip_code*
+- *payer*
 
 ## Questions answered in the script 
 
