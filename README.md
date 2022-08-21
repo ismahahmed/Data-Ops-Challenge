@@ -52,7 +52,7 @@ def change_state_format(table):
 ```
 
 ## Inputting Data and Querying
-The rest of the script is available <a href="https://github.com/ismahahmed/Data-Ops-Challenge/tree/main/data_challenge.py">here</a>. In the script I include creating the `srd_member_info` table, inserting data for the eligible members in April 2022 as well as answering the questions below. 
+The rest of the script is available <a href="https://github.com/ismahahmed/Data-Ops-Challenge/tree/main/data_challenge.py">here</a>. In the script I include creating the `std_member_info` table, inserting data for the eligible members in April 2022 as well as answering the questions below. 
 
 ## Questions answered in the script 
 
