@@ -49,18 +49,18 @@ def insert_data():
 # Run below once:
 
 # Change roster 2 date format to match other rosters: YYYY-MM-DD
-#change_date_format('roster_2', 'eligibility_start_date')
-#change_date_format('roster_2', 'eligibility_end_date')
-#change_date_format('roster_2', 'Dob')
+change_date_format('roster_2', 'eligibility_start_date')
+change_date_format('roster_2', 'eligibility_end_date')
+change_date_format('roster_2', 'Dob')
 
 # Change roster 4 format of state 'CA' -> 'California'
-#change_state_format('roster_4')
+change_state_format('roster_4')
 
 # Create new table
-#create_std_member_info()
+create_std_member_info()
 
 # Insert data into table
-#insert_data()
+insert_data()
 
 '''
 QUESTIONS
