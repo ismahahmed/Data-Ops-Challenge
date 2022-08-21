@@ -2,7 +2,7 @@
 
 ## Objective
 You are being asked to take multiple member rosters and combine them to get a full view of the membership. With the full membership, create summary statistics to be used for further analysis.
-Using Python and SQLite to complete the steps of combining the member rosters and creating the requested tables and summary statistics.
+Using `Python` and `SQLite` to complete the steps of combining the member rosters and creating the requested tables and summary statistics.
 
 ## Data 
 The `interview.db` is a sqlite database that includes the following tables:
@@ -28,6 +28,28 @@ For this challenge, I needed to create a table that included data from the 5 ros
 - *state*
 - *zip_code*
 - *payer*
+
+## Standarizing Data
+
+In order to combine the rosters into one table, I needed to make sure the data was standarized. Firstly, I needed to change roster 2 date format to match other rosters: YYYY-MM-DD. I did this by creating a function that took in two parameters: `table` and `col`. Based on the table and column selected, the data will be changed from DD-MM-YYYY to YYYY-MM-DD.
+
+```python
+def change_date_format(table, col): 
+    sql = f'''UPDATE {table} SET [{col}] = substr({col}, 7, 4) 
+    || '-' || substr({col}, 1,2) || '-' || 
+    substr({col}, 4,2);'''
+
+    c.execute(sql)
+    conn.commit()
+```
+All but one roster had the state set as 'California'. Roster 4 however used the abbriviated version of `CA`. I created a fucntion that would fix this. 
+
+```python
+def change_state_format(table):
+    sql = f'''UPDATE {table} SET state = "California" WHERE state = "CA";'''
+    c.execute(sql)
+    conn.commit()
+```
 
 ## Questions answered in the script 
 
