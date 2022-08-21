@@ -51,6 +51,10 @@ def change_state_format(table):
     conn.commit()
 ```
 
+## Inputting Data and Querying
+The entire script is available <a href="https://github.com/ismahahmed/Data-Ops_Challenge">here</a> 
+
+
 ## Questions answered in the script 
 
 ### Q1: How many distinct members are eligible in April 2022? 
