@@ -36,7 +36,7 @@ For this challenge, I needed to create a table that included data from the 5 ros
 There are **98,041** distinct members who are eligible in April 2022 
 
 ~~~~sql
-SELECT payer, count(member_id) FROM std_member_info GROUP BY payer;
+SELECT COUNT (DISTINCT member_id) FROM std_member_info;
 ~~~~
 
 ### Q2: How many members were included more than once?
