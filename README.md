@@ -66,7 +66,7 @@ SELECT COUNT (DISTINCT member_id) FROM std_member_info;
 
 ### Q2: How many members were included more than once?
 
-For members eligible in April 2022, there were **22,795** members included more than once. 
+For members eligible in April 2022, there were **22,640** members included more than once. 
 
 ~~~~sql
 SELECT count(*) FROM (SELECT Person_Id, COUNT(Person_Id) 
