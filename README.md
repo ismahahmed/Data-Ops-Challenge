@@ -66,7 +66,7 @@ SELECT COUNT (DISTINCT member_id) FROM std_member_info;
 
 ### Q2: How many members were included more than once?
 
-For members eligible in April 2022, there were **22,640** members included more than once. 
+For members eligible in April 2022, there were **17,740** members included more than once. 
 
 ~~~~sql
 SELECT count(*) FROM (SELECT Person_Id, COUNT(Person_Id) 
@@ -119,7 +119,7 @@ model_scores_by_zip.food_access_score < 2.0);
 
 ### Q5: What is the average social isolation score for the members? (Using `std_member_info` and `model_scores_by_zip` tables)
 
-The average social isolation score for the members is **3.0686842239472822**
+The average social isolation score for the members is **3.0686**
 
 ~~~~sql
 SELECT avg(social_isolation_score) FROM 
