@@ -135,3 +135,5 @@ from std_member_info WHERE zipcode =
 (SELECT zcta from model_scores_by_zip
 ORDER BY algorex_sdoh_composite_score DESC LIMIT 1);
 ~~~~
+
+Included `output.txt` file in repository with the list of members. 
