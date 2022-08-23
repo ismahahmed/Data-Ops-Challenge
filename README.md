@@ -31,7 +31,7 @@ For this challenge, I needed to create a table that included data from the 5 ros
 
 ## Standarizing Data
 
-In order to combine the rosters into one table, I needed to make sure the data was standarized. Firstly, I needed to change roster 2 date format to match other rosters: YYYY-MM-DD. I did this by creating a function that took in two parameters: `table` and `col`. Based on the table and column selected, the data will be changed from DD-MM-YYYY to YYYY-MM-DD.
+In order to combine the rosters into one table, I needed to make sure the data was standarized. Firstly, I needed to change roster 2 date format to match other rosters: YYYY-MM-DD. I did this by creating a function that took in two parameters: `table` and `col`. Based on the table and column selected, the data will be changed from MM-DD-YYYY to YYYY-MM-DD.
 
 ```python
 def change_date_format(table, col): 
