@@ -151,8 +151,15 @@ c.execute(q6_sql)
 q6_results = c.fetchall()
 zip = q6_results[0][3]
 print(f'The zip code with the highest algorex_sdoh_composite_score is {zip}. Below are the list of members who live in that zipcode')
-for i in q6_results:
-    print(i[0], ': ', i[1], ', ', i[2])
 
+q6_members = ''
+for member in q6_results:
+    print(member[0], ': ', member[1], ', ', member[2])
+    q6_members += (str(member[0])+ ': '+ str(member[1])+ ', '+ str(member[2])+ '\n')
+
+
+output = open('output.txt', 'w')
+output.write(q6_members)
+output.close()
 
 c.close()
